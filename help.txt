@@ -1,0 +1,8 @@
+To run this follow these steps:
+
+1. Open terminal and go to the location of this folder
+2. first write this command:
+        pip install flask
+3. once it is installed, then write this command:
+        python3 app.py
+4. wait for few seconds, then you can access the webapp on this url -> http://localhost:5000/

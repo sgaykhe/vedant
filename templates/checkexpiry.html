@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Munchmate</title>
+  <link rel="stylesheet" href="../static/styles.css">
+</head>
+
+<body style="background-color:powderblue;">
+  <img src="../static/logo.png" alt="Munchmate">
+  <h1>Check The Expiry Date Of The Product</h1>
+  <form method="POST">
+    <label for="Year">Enter Year in YYYY format:</label>
+    <input type="text" id="year" name="year" required>
+    </br></br>
+    <label for="Month">Enter Month in MM format:</label>
+    <input type="text" id="month" name="month" required>
+    </br></br>
+    <label for="Day">Enter Day in DD format:</label>
+    <input type="text" id="day" name="day" required>
+    </br></br>
+    <label for="pname">Enter Product Name</label>
+    <input type="text" id="pname" name="pname" required>
+    <br><br>
+    <button type="submit">Submit</button>
+  </form>
+  {%if msg1%}
+  <h2>{{msg1}}</h2>
+  {%endif%}
+  {%if msg2%}
+  <h2>{{msg2}}</h2>
+  {%endif%}
+</body>
+
+</html>
